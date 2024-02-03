@@ -1,0 +1,128 @@
+@import url(/styles/reset.css);
+/* *{border: 5px solid black} */
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+nav{
+    background-color: #333333;
+    width: 20%;
+    /* flex-shrink: 0; */
+}
+
+nav li img{
+    max-width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav li{
+    color: white;
+    letter-spacing: 2px;
+    /* margin: 20px 0 0 20px; */
+    border-bottom: 1px solid #292929;
+    padding: 20px;
+}
+
+.container{
+    background-color: #DCDCDC;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container{
+    /* border: 5px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.img-container{
+    /* width: 40%; */
+    display: flex;
+    background-color: white;
+    flex:1;
+    margin: 10px;
+    justify-content: center;
+
+}
+
+.img-container img{
+    width: 200px;
+    margin: 10px;
+}
+
+h1{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+h2{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.tableSettings{
+    padding: 15px;
+    background-color: white;
+    margin: 20px;
+    height: 35%;
+}
+
+table caption{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+    margin: 10px;
+}
+
+tr,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+table tr:first-child {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        flex-direction: column;
+       align-content: center;
+    }
+    nav{
+        width: 100%;
+        
+    }
+
+    nav li img{
+        text-align: center;
+        max-width: 40px;
+    }
+
+
+    .main-container{
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    table{
+        margin: 10px;
+    }
+  
+}
